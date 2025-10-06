@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Website Armaso 2026" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="LogoARMASO2026.png" />
+  <link rel="icon" type="image/svg+xml" href="LogoARMASO.svg" />
+
+  <title>ARMASO 2026</title>
+
+  <style>
+    /* === NAVBAR === */
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      overflow-x: hidden;
+      background: linear-gradient(#bde0fe, #a2d2ff);
+    }
+
+    nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 60px; /* lebih lebar biar kanan-kiri lega */
+  background-color: #873c0c;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #a2d2ff;
+}
+
+.auth {
+  display: flex;
+  gap: 20px;
+}
+
+.auth a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.auth a:hover {
+  color: #a2d2ff;
+}
+
+/* Responsif (jika layar kecil) */
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 20px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  .auth {
+    justify-content: center;
+    margin-top: 8px;
+  }
+}
+
+
+    /* === HERO SECTION === */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      margin-top: 60px; /* agar tidak tertutup navbar */
+    }
+
+    .layer {
+      position: absolute;
+      width: 100%;
+      transition: transform 0.2s ease-out;
+      will-change: transform;
+    }
+
+    .awan { top: 0; z-index: 1; }
+    .pohon-belakang { top: 0; z-index: 2; }
+    .goa { top: 0; z-index: 3; }
+    .dedaunan { top: 0; z-index: 4; }
+    .pohon-depan { top: 0; z-index: 5; }
+    .teks {
+      width: 40%;
+      left: 30%;
+      top: 35%;
+      z-index: 6;
+    }
+
+    /* === CONTENT === */
+    .content {
+      position: relative;
+      padding: 120px 80px;
+      background: white;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <nav>
+    <div class="logo">
+      <img src="LogoARMASO2026.png" alt="Logo" />
+      <span>ARMASO 2026</span>
+    </div>
+
+    <ul class="menu">
+      <li><a href="index.html">About Us</a></li>
+      <li><a href="about.html">Category</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="auth">
+      <a href="https://armaso.arrahmat-bjn.sch.id/login" target="_blank">Login</a>
+      <a href="https://armaso.arrahmat-bjn.sch.id/register" target="_blank">Daftar</a>
+    </div>
+  </nav>
+
+  <!-- HERO / PARALLAX SECTION -->
+<section class="hero">
+  <!-- Awan -->
+  <img src="assets/fixxxxbg.png" id="awan" class="layer awan" alt="Awan">
+
+  <!-- Pohon belakang kiri & kanan -->
+  <img src="assets/kiribaru.png" id="pohonBelakangKiri" class="layer pohon-belakang kiri" alt="Pohon Belakang Kiri">
+  <img src="assets/kananbaru.png" id="pohonBelakangKanan" class="layer pohon-belakang kanan" alt="Pohon Belakang Kanan">
+
+  <!-- Goa -->
+  <img src="assets/fix1.png" id="goa" class="layer goa" alt="Goa">
+
+  <!-- Pohon depan kiri & kanan -->
+  <img src="assets/hon2.png" id="pohonDepanKiri" class="layer pohon-depan kiri" alt="Pohon Depan Kiri">
+  <img src="assets/hon.png" id="pohonDepanKanan" class="layer pohon-depan kanan" alt="Pohon Depan Kanan">
+
+  <!-- Daun kiri & kanan -->
+  <img src="assets/daunkiri.png" id="daunKiri" class="layer daun kiri" alt="Daun Kiri">
+  <img src="assets/daunkanan.png" id="daunKanan" class="layer daun kanan" alt="Daun Kanan">
+  
+  <!-- batu -->
+  <img src="assets/batuutuhdepan.png" id="batuutuh" class="layer batuutuh" alt="batuutuh">
+
+  <!-- Teks ARMASO-->
+  <im src="assets/bawaharr.png" id="teks" class="layer teks" alt="ARMASO">
+
+ </section>
+
+
+
+
+
+
+  <!-- CONTENT -->
+  <section class="content">
+    <h2>Selamat Datang di ARMASO 2026</h2>
+    <p>Scroll untuk melihat efek parallax dan eksplor dunia ARMASO!</p>
+  </section>
+
+<script>
+window.addEventListener("scroll", () => {
+  const scrollY = window.scrollY;
+
+  // Ambil elemen-elemen yang dibutuhkan
+  const awan = document.querySelector(".awan");
+  const pohonBelakangKiri = document.querySelector(".pohon-belakang.kiri");
+  const pohonBelakangKanan = document.querySelector(".pohon-belakang.kanan");
+  const pohonDepanKiri = document.querySelector(".pohon-depan.kiri");
+  const pohonDepanKanan = document.querySelector(".pohon-depan.kanan");
+  const daunKiri = document.querySelector(".daun.kiri");
+  const daunKanan = document.querySelector(".daun.kanan");
+  const batuKiri = document.querySelector(".batu.kiri");
+  const batuKanan = document.querySelector(".batu.kanan");
+  const teks = document.querySelector(".teks");
+
+  // Efek parallax lainnya
+  if (awan) awan.style.transform = `translateY(${-scrollY * 0.3}px)`;
+  if (pohonBelakangKiri) pohonBelakangKiri.style.transform = `translateX(${-scrollY * 0.15}px)`;
+  if (pohonBelakangKanan) pohonBelakangKanan.style.transform = `translateX(${scrollY * 0.15}px)`;
+  if (pohonDepanKiri) pohonDepanKiri.style.transform = `translateX(${-scrollY * 0.50}px)`;
+  if (pohonDepanKanan) pohonDepanKanan.style.transform = `translateX(${scrollY * 0.50}px)`;
+  if (daunKiri) daunKiri.style.transform = `translateX(${-scrollY * 0.25}px)`;
+  if (daunKanan) daunKanan.style.transform = `translateX(${scrollY * 0.35}px)`;
+
+  // Batu ikut turun (biar efek parallax-nya dapet)
+  if (batuKiri) batuKiri.style.transform = `translateY(${scrollY * 0.25}px)`;
+  if (batuKanan) batuKanan.style.transform = `translateY(${scrollY * 0.25}px)`;
+
+// Efek Tulisan ARMASO Menghilang Saat Scroll
+
+
+});
+</script>
+
+</body>
+</html>

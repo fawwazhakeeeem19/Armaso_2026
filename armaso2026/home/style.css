@@ -1,0 +1,30 @@
+/* Urutan layer (belakang → depan) */
+.awan { top: 0; z-index: 1; }
+.pohon-belakang { top: 0; z-index: 2; }
+.goa {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transform-origin: center center;
+  width: 100%;
+  max-width: 1200px; /* bisa sesuaikan ukuran */
+  z-index: 3; /* di tengah layer */
+  transition: transform 0.2s ease-out;
+
+}
+.pohon-depan { top: 0; z-index: 4; }
+.batuutuh { top: 0; z-index: 5; }   /* batu di depan pohon depan */
+.daun { top: 0; z-index: 6; }       /* daun juga di depan pohon */
+#teks-armaso {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.3s ease;
+  z-index: 20;
+}
+
+
+
+
